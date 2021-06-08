@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Variáveis</title>
+  <!-- <link rel="stylesheet" href="css/grid.css" /> -->
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+
+  <script>
+    function desdobrar() {
+      for (let i = 1; i <= 12; i++) {
+        let valor = $("#pos_" + i).val();
+        $(".casa_" + i).val(valor);
+        console.log(`Entrou no for com i valendo ${i}, pegou o id pos_${i} com valor ${valor} e passou para as classes casa_${i}.`);
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="A12">
+      <h1>Desdobramento Mega-sena/Dupla Sena 12 Dezenas</h1>
+    </div>
+
+    <div class="M1">
+      <h2>Digite suas 12 dezenas:</h2>
+    </div>
+    <div class="M2">
+      <input id="pos_1" type="text" size="1" />
+      <input id="pos_2" type="text" size="1" />
+      <input id="pos_3" type="text" size="1" />
+      <input id="pos_4" type="text" size="1" />
+      <input id="pos_5" type="text" size="1" />
+      <input id="pos_6" type="text" size="1" />
+      <input id="pos_7" type="text" size="1" />
+      <input id="pos_8" type="text" size="1" />
+      <input id="pos_9" type="text" size="1" />
+      <input id="pos_10" type="text" size="1" />
+      <input id="pos_11" type="text" size="1" />
+      <input id="pos_12" type="text" size="1" />
+    </div>
+    <div class="botao">
+      <button onclick="desdobrar()" class="btn">Desdobrar</button>
+    </div>
+
+    <div class="g1">
+      <div class="t1">
+        <h2>Jogo 1:</h2>
+      </div>
+      <div class="j1"><input type="text" class="casa_1" size="1" /></div>
+      <div class="j1"><input type="text" class="casa_2" size="1" /></div>
+      <div class="j1"><input type="text" class="casa_3" size="1" /></div>
+      <div class="j1"><input type="text" class="casa_5" size="1" /></div>
+      <div class="j1"><input type="text" class="casa_6" size="1" /></div>
+      <div class="j1"><input type="text" class="casa_7" size="1" /></div>
+    </div>
+
+    <div class="g2">
+      <div class="t2">
+        <h2>Jogo 2:</h2>
+      </div>
+      <div class="j2"><input type="text" class="casa_1" size="1" /></div>
+      <div class="j2"><input type="text" class="casa_3" size="1" /></div>
+      <div class="j2"><input type="text" class="casa_4" size="1" /></div>
+      <div class="j2"><input type="text" class="casa_8" size="1" /></div>
+      <div class="j2"><input type="text" class="casa_9" size="1" /></div>
+      <div class="j2"><input type="text" class="casa_11" size="1" /></div>
+    </div>
+
+    <div class="g3">
+      <div class="t3">
+        <h2>Jogo 3:</h2>
+      </div>
+      <div class="j3"><input type="text" class="casa_1" size="1" /></div>
+      <div class="j3"><input type="text" class="casa_4" size="1" /></div>
+      <div class="j3"><input type="text" class="casa_6" size="1" /></div>
+      <div class="j3"><input type="text" class="casa_7" size="1" /></div>
+      <div class="j3"><input type="text" class="casa_10" size="1" /></div>
+      <div class="j3"><input type="text" class="casa_12" size="1" /></div>
+    </div>
+
+    <div class="g4">
+      <div class="t4">
+        <h2>Jogo 4:</h2>
+      </div>
+      <div class="j4"><input type="text" class="casa_2" size="1" /></div>
+      <div class="j4"><input type="text" class="casa_3" size="1" /></div>
+      <div class="j4"><input type="text" class="casa_4" size="1" /></div>
+      <div class="j4"><input type="text" class="casa_5" size="1" /></div>
+      <div class="j4"><input type="text" class="casa_10" size="1" /></div>
+      <div class="j4"><input type="text" class="casa_12" size="1" /></div>
+    </div>
+
+    <div class="g5">
+      <div class="t5">
+        <h2>Jogo 5:</h2>
+      </div>
+      <div class="j5"><input type="text" class="casa_2" size="1" /></div>
+      <div class="j5"><input type="text" class="casa_7" size="1" /></div>
+      <div class="j5"><input type="text" class="casa_8" size="1" /></div>
+      <div class="j5"><input type="text" class="casa_9" size="1" /></div>
+      <div class="j5"><input type="text" class="casa_11" size="1" /></div>
+      <div class="j5"><input type="text" class="casa_12" size="1" /></div>
+    </div>
+
+    <div class="g6">
+      <div class="t6">
+        <h2>Jogo 6:</h2>
+      </div>
+      <div class="j6"><input type="text" class="casa_5" size="1" /></div>
+      <div class="j6"><input type="text" class="casa_6" size="1" /></div>
+      <div class="j6"><input type="text" class="casa_8" size="1" /></div>
+      <div class="j6"><input type="text" class="casa_9" size="1" /></div>
+      <div class="j6"><input type="text" class="casa_10" size="1" /></div>
+      <div class="j6"><input type="text" class="casa_11" size="1" /></div>
+    </div>
+  </div>
+</body>
+</body>
+</html>
