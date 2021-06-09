@@ -25,7 +25,7 @@ body {
 .M1 {  
   display: inline-block; 
   margin-left: 60px;  
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .M2 {  
@@ -46,28 +46,42 @@ body {
 
 input {
   text-align: center;
-  margin: 2px;
+  font-weight: bold;
+  
+  
+  
 }
 
 .t1, .t2, .t3, .t4, .t5, .t6 {
   display: inline-block;  
   margin-right: 5px;  
-  font-size: 14px;
+  font-size: 12px;
   
 }
 
 .j1, .j2, .j3, .j4, .j5, .j6 {
   display:inline-block;
-  margin-right: 5px;
+  margin-right: 2px;
+  
+  
   
 }
 
-
-.g1, .g2, .g3, .g4, .g5, .g6 {
-  display: flex;  
+/* .alinhaCentro {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  align-items: center;    
-  margin: 1px;
+  align-items: center
+  
+} */
+
+
+.g1, .g2, .g3, .g4, .g5, .g6 {    
+  height: 40px;  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center
 }
 
 @media (max-width: 739px) {
@@ -79,6 +93,7 @@ input {
     font-size: 12px;
     margin: 3px;
     margin-bottom: -19px;
+    padding: 2px 0px 2px 0px;
   }
 
   .M1 {
@@ -90,8 +105,8 @@ input {
   .M2 {
     display: flex;
     flex-wrap: wrap;
-    width: 250px;
-    margin-left: 65px;  
+    width: 300px;
+    margin-left: 30px;  
     margin-top: -10px;
     margin-bottom: 20px;
   }
@@ -109,13 +124,32 @@ input {
   }
 
   .t1, .t2, .t3, .t4, .t5, .t6 {    
-    font-size: 13px;    
+    font-size: 10px;    
+    display: block;    
+    margin-bottom: -14px;
+    margin-left: -5px;
+  }
+
+  .g1, .g2, .g3, .g4, .g5, .g6 {    
+    display: block;
+    margin-left: 37px; 
     
   }
 
-  .g1, .g2, .g3, .g4, .g5, .g6 {
-    margin: 1px;    
+  .j1, .j2, .j3, .j4, .j5, .j6 {
+    margin-left: -5px;
+    padding: 0px;
+  }
+
+  input {
+    font-weight: bold;    
     
   }
-	
+
+  .pos {
+    margin-left: 1px;
+    margin-bottom: 1px;
+  }
+
+  
 }
